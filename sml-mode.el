@@ -1499,49 +1499,49 @@ signature, structure, and functor by default.")
          ,@elements))))
 (put 'sml-def-skeleton 'lisp-indent-function 2)
 
-(sml-def-skeleton "let" nil
-  @ "\nin " > _ "\nend" >)
+;; (sml-def-skeleton "let" nil
+;;   @ "\nin " > _ "\nend" >)
 
-(sml-def-skeleton "if" nil
-  @ " then " > _ "\nelse " > _)
+;; (sml-def-skeleton "if" nil
+;;   @ " then " > _ "\nelse " > _)
 
-(sml-def-skeleton "local" nil
-  @ "\nin" > _ "\nend" >)
+;; (sml-def-skeleton "local" nil
+;;   @ "\nin" > _ "\nend" >)
 
-(sml-def-skeleton "case" "Case expr: "
-  str "\nof " > _ " => ")
+;; (sml-def-skeleton "case" "Case expr: "
+;;   str "\nof " > _ " => ")
 
-(sml-def-skeleton "signature" "Signature name: "
-  str " =\nsig" > "\n" > _ "\nend" >)
+;; (sml-def-skeleton "signature" "Signature name: "
+;;   str " =\nsig" > "\n" > _ "\nend" >)
 
-(sml-def-skeleton "structure" "Structure name: "
-  str " =\nstruct" > "\n" > _ "\nend" >)
+;; (sml-def-skeleton "structure" "Structure name: "
+;;   str " =\nstruct" > "\n" > _ "\nend" >)
 
-(sml-def-skeleton "functor" "Functor name: "
-  str " () : =\nstruct" > "\n" > _ "\nend" >)
+;; (sml-def-skeleton "functor" "Functor name: "
+;;   str " () : =\nstruct" > "\n" > _ "\nend" >)
 
-(sml-def-skeleton "datatype" "Datatype name and type params: "
-  str " =" \n)
+;; (sml-def-skeleton "datatype" "Datatype name and type params: "
+;;   str " =" \n)
 
-(sml-def-skeleton "abstype" "Abstype name and type params: "
-  str " =" \n _ "\nwith" > "\nend" >)
+;; (sml-def-skeleton "abstype" "Abstype name and type params: "
+;;   str " =" \n _ "\nwith" > "\nend" >)
 
-;;
+;; ;;
 
-(sml-def-skeleton "struct" nil
-  _ "\nend" >)
+;; (sml-def-skeleton "struct" nil
+;;   _ "\nend" >)
 
-(sml-def-skeleton "sig" nil
-  _ "\nend" >)
+;; (sml-def-skeleton "sig" nil
+;;   _ "\nend" >)
 
-(sml-def-skeleton "val" nil
-  @ " = " > _)
+;; (sml-def-skeleton "val" nil
+;;   @ " = " > _)
 
-(sml-def-skeleton "fn" nil
-  @ " =>" > _)
+;; (sml-def-skeleton "fn" nil
+;;   @ " =>" > _)
 
-(sml-def-skeleton "fun" nil
-  @ " =" > _)
+;; (sml-def-skeleton "fun" nil
+;;   @ " =" > _)
 
 ;;
 
