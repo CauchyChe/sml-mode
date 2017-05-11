@@ -1,3 +1,5 @@
+CauchyChe diable the key word auto completition, for example "fun SPC" will auto complete into "fun  =".
+
 SML-MODE is a major Emacs mode for editing Standard ML.
 It provides syntax highlighting and automatic indentation and
 comes with sml-proc which allows interaction with an inferior SML
